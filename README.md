@@ -23,7 +23,7 @@ $ npm install -g typapi
 $ typapi COMMAND
 running command...
 $ typapi (--version)
-typapi/0.0.0 win32-x64 node-v17.7.2
+typapi/0.1.0 win32-x64 node-v17.7.2
 $ typapi --help [COMMAND]
 USAGE
   $ typapi COMMAND
@@ -44,6 +44,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`typapi autocomplete [SHELL]`](#typapi-autocomplete-shell)
+* [`typapi generate [FILE]`](#typapi-generate-file)
 * [`typapi hello PERSON`](#typapi-hello-person)
 * [`typapi hello world`](#typapi-hello-world)
 * [`typapi help [COMMAND]`](#typapi-help-command)
@@ -56,6 +58,56 @@ USAGE
 * [`typapi plugins:uninstall PLUGIN...`](#typapi-pluginsuninstall-plugin-1)
 * [`typapi plugins:uninstall PLUGIN...`](#typapi-pluginsuninstall-plugin-2)
 * [`typapi plugins update`](#typapi-plugins-update)
+
+## `typapi autocomplete [SHELL]`
+
+display autocomplete installation instructions
+
+```
+USAGE
+  $ typapi autocomplete [SHELL] [-r]
+
+ARGUMENTS
+  SHELL  shell type
+
+FLAGS
+  -r, --refresh-cache  Refresh cache (ignores displaying instructions)
+
+DESCRIPTION
+  display autocomplete installation instructions
+
+EXAMPLES
+  $ typapi autocomplete
+
+  $ typapi autocomplete bash
+
+  $ typapi autocomplete zsh
+
+  $ typapi autocomplete --refresh-cache
+```
+
+_See code: [@oclif/plugin-autocomplete](https://github.com/oclif/plugin-autocomplete/blob/v1.3.0/src/commands/autocomplete/index.ts)_
+
+## `typapi generate [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ typapi generate [FILE] [-n <value>] [-f]
+
+FLAGS
+  -f, --force
+  -n, --name=<value>  name to print
+
+DESCRIPTION
+  describe the command here
+
+EXAMPLES
+  $ typapi generate
+```
+
+_See code: [dist/commands/generate.ts](https://github.com/moishinetzer/typapi/blob/v0.1.0/dist/commands/generate.ts)_
 
 ## `typapi hello PERSON`
 
@@ -79,7 +131,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/hello/index.ts](https://github.com/moishinetzer/typapi/blob/v0.0.0/dist/commands/hello/index.ts)_
+_See code: [dist/commands/hello/index.ts](https://github.com/moishinetzer/typapi/blob/v0.1.0/dist/commands/hello/index.ts)_
 
 ## `typapi hello world`
 
@@ -135,7 +187,7 @@ EXAMPLES
   $ typapi plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v2.0.11/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v2.1.0/src/commands/plugins/index.ts)_
 
 ## `typapi plugins:install PLUGIN...`
 
