@@ -23,7 +23,7 @@ $ npm install -g typapi
 $ typapi COMMAND
 running command...
 $ typapi (--version)
-typapi/0.1.0 win32-x64 node-v17.7.2
+typapi/0.2.0 win32-x64 node-v17.7.2
 $ typapi --help [COMMAND]
 USAGE
   $ typapi COMMAND
@@ -107,7 +107,7 @@ EXAMPLES
   $ typapi generate
 ```
 
-_See code: [dist/commands/generate.ts](https://github.com/moishinetzer/typapi/blob/v0.1.0/dist/commands/generate.ts)_
+_See code: [dist/commands/generate.ts](https://github.com/moishinetzer/typapi/blob/v0.2.0/dist/commands/generate.ts)_
 
 ## `typapi hello PERSON`
 
@@ -131,7 +131,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/hello/index.ts](https://github.com/moishinetzer/typapi/blob/v0.1.0/dist/commands/hello/index.ts)_
+_See code: [dist/commands/hello/index.ts](https://github.com/moishinetzer/typapi/blob/v0.2.0/dist/commands/hello/index.ts)_
 
 ## `typapi hello world`
 
