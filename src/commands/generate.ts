@@ -10,6 +10,7 @@ const typeOfObject = (obj: any): string => {
       result += `${key}: ${typeof obj[key]};`;
     }
   }
+
   return `{${result}}`;
 };
 
@@ -43,6 +44,7 @@ export default class Generate extends Command {
     if (args.file && flags.force) {
       this.log(`you input --force and --file: ${args.file}`);
     }
+
     this.log(
       await apiCallToType("https://jsonplaceholder.typicode.com/users/1")
     );
